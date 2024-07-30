@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memecoin</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap"> <!-- Add a scary-looking font -->
+    <style>
+        html, body {
+            height: 100%; /* Ensure both html and body take up the full height */
+            margin: 0; /* Remove default margin */
+        }
+
+        body {
+            background-image: url("2ndmemcoinsite/images/background.png"); /* Ensure this path is correct */
+            background-size: cover; /* Makes the image cover the entire background */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Ensures the image doesn’t repeat */
+            font-family: 'Anton', sans-serif; /* Apply the scary font */
+            color: #4CAF50; /* Set text color to a more subdued green */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            position: relative; /* Enable positioning of corner images */
+            min-height: 100vh; /* Ensure body is at least as tall as the viewport */
+        }
+        
+        h1 {
+            font-weight: bold; /* Make text bold */
+            font-size: 3em; /* Increase font size for the main heading */
+            margin: 20px 0; /* Add margin to top and bottom */
+        }
+
+        h2 {
+            font-weight: bold; /* Make text bold */
+            font-size: 2em; /* Increase font size for the subheading */
+            margin: 10px 0; /* Add margin to top and bottom */
+        }
+
+        a {
+            color: #4CAF50; /* Make link text a more subdued green */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Add underline on hover for better visibility */
+        }
+
+        /* Video Container for Responsive Aspect Ratio */
+        .video-container {
+            position: relative;
+            width: 80%; /* Set video container width */
+            max-width: 800px; /* Set a maximum width for larger screens */
+            margin: 20px auto; /* Center horizontally with margin */
+            padding-top: 25%; /* 16:9 Aspect Ratio reduced for shorter height */
+            height: 0; /* Remove height to maintain aspect ratio */
+            overflow: hidden; /* Hide any overflow */
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensure the whole video fits within the container */
+        }
+
+        .corner-image {
+            position: absolute; /* Position absolutely within the body */
+            width: 120px; /* Adjust size to prevent overlap */
+            height: auto; /* Maintain aspect ratio */
+            z-index: 10; /* Ensure images are on top */
+        }
+
+        .top-left {
+            top: 20px; /* Adjusted distance from top */
+            left: 20px; /* Adjusted distance from left */
+        }
+
+        .top-right {
+            top: 20px; /* Adjusted distance from top */
+            right: 20px; /* Adjusted distance from right */
+        }
+
+        .bottom-left {
+            bottom: 20px; /* Adjusted distance from bottom */
+            left: 20px; /* Adjusted distance from left */
+        }
+
+        .bottom-right {
+            bottom: 20px; /* Adjusted distance from bottom */
+            right: 20px; /* Adjusted distance from right */
+        }
+
+        /* Social Icons Section */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px; /* Add margin for spacing */
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px; /* Space between icons */
+        }
+
+        .social-icons img {
+            width: 40px; /* Set the width of the icons */
+            height: 40px; /* Set the height of the icons */
+            border-radius: 50%; /* Make icons round */
+            border: 2px solid #4CAF50; /* Optional border color */
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO $CGB ON SOLANA!</h1>
+    <h2>CATS GONE BAD!</h2> <!-- Increased font size for subheading -->
+    
+    <!-- Video Section with Container -->
+    <div class="video-container">
+        <video controls>
+            <source src="2ndmemcoinsite/images/breakvideo.mp4" type="video/mp4"> <!-- Ensure this matches your MP4 file name -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <!-- Corner Images -->
+    <img src="2ndmemcoinsite/images/grumpy.jpg" alt="Grumpy" class="corner-image top-left">
+    <img src="2ndmemcoinsite/images/wifebeatcat.jpg" alt="Top Right" class="corner-image top-right">
+    <img src="2ndmemcoinsite/images/bcorner.jpg" alt="Bottom Left" class="corner-image bottom-left">
+    <img src="2ndmemcoinsite/images/angry.jpg" alt="Bottom Right" class="corner-image bottom-right">
+    
+    <p>Check out more <a href="https://example.com">here</a>.</p>
+    
+    <!-- Social Icons -->
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+            <img src="2ndmemcoinsite/images/dex.jpg" alt="Facebook">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="2ndmemcoinsite/images/x.jpg" alt="Twitter">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="2ndmemcoinsite/images/tg.jpg" alt="Instagram">
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+            <img src="2ndmemcoinsite/images/pump.jpg" alt="LinkedIn">
+        </a>
+    </div>
+</body>
+</html>
